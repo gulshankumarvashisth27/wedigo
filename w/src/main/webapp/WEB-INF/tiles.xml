@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="base" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="navbar" value="/WEB-INF/views/navbar.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+	</definition>
+	
+	
+	<definition name="base1" template="/WEB-INF/views/layout1.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="navbar1" value="/WEB-INF/views/navbar1.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+	</definition>
+	
+	<definition name="base2" template="/WEB-INF/views/layout2.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="navbar2" value="/WEB-INF/views/navbar2.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp"/>
+	</definition>
+	<!-- <definition name="home" extends="base">
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp"></put-attribute>
+	</definition> -->
+	<definition name="home" extends="base">
+		<put-attribute name="title" value="WediGo"/>
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp"/>
+	</definition>
+	
+	<definition name="contact" extends="base">
+		<put-attribute name="title" value="Contact"/>
+		<put-attribute name="body" value="/WEB-INF/views/contact.jsp"/>
+	</definition>
+	<definition name="member" extends="base">
+		<put-attribute name="title" value="Member"/>
+		<put-attribute name="body" value="/WEB-INF/views/member.jsp"/>
+	</definition>
+	
+	<definition name="register" extends="base">
+		<put-attribute name="title" value="Register"/>
+		<put-attribute name="body" value="/WEB-INF/views/register.jsp"/>
+	</definition>
+	
+	<definition name="login" extends="base">
+		<put-attribute name="title" value="Login"/>
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"/>
+	</definition>
+	
+	<definition name="weddinghall" extends="base">
+		<put-attribute name="title" value="WeddingHall"/>
+		<put-attribute name="body" value="/WEB-INF/views/weddinghall.jsp"/>
+	</definition>
+	
+	<definition name="dj" extends="base">
+		<put-attribute name="title" value="D.J"/>
+		<put-attribute name="body" value="/WEB-INF/views/dj.jsp"/>
+	</definition>
+	
+	<definition name="caterer" extends="base">
+		<put-attribute name="title" value="Caterer"/>
+		<put-attribute name="body" value="/WEB-INF/views/caterer.jsp"/>
+	</definition>
+	
+	<definition name="photographer" extends="base">
+		<put-attribute name="title" value="Photographer"/>
+		<put-attribute name="body" value="/WEB-INF/views/photographer.jsp"/>
+	</definition>
+	
+	<definition name="login1" extends="base">
+		<put-attribute name="title" value="Login"/>
+		<put-attribute name="body" value="/WEB-INF/views/login1.jsp"/>
+	</definition>
+	
+	<definition name="adminlogin" extends="base">
+		<put-attribute name="title" value="AdminLogin"/>
+		<put-attribute name="body" value="/WEB-INF/views/adminlogin.jsp"/>
+	</definition>
+	
+	<definition name="adminlogin1" extends="base">
+		<put-attribute name="title" value="AdminLogin"/>
+		<put-attribute name="body" value="/WEB-INF/views/adminlogin1.jsp"/>
+	</definition>
+	
+	<definition name="logout" extends="base1">
+		<put-attribute name="title" value="Logout"/>
+		<put-attribute name="body" value="/WEB-INF/views/logout.jsp"/>
+	</definition>
+	
+	<definition name="adminlogout" extends="base2">
+		<put-attribute name="title" value="AdminLogout"/>
+		<put-attribute name="body" value="/WEB-INF/views/adminlogout.jsp"/>
+	</definition>
+</tiles-definitions>       
