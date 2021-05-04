@@ -58,7 +58,8 @@ public class HomeController {
 		return"home";
 	}
 	
-	
+	///@param a and b
+	///@returns contact
 	@RequestMapping("/contact")
 	public String contact()
 	{
