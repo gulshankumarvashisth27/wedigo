@@ -49,7 +49,8 @@ public class HomeController {
 	
 	
 	
-	
+	///@param nthg
+	///@returns home
 	@RequestMapping("/home")
 	public String home()
 	{
